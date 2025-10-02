@@ -22,4 +22,16 @@ WHERE EXISTS (SELECT *
 			WHERE c.customer_id = o.customer_id);
 
 -- Identifique consultas que podem ser reescritas usando CTE materializada para melhorar a performance.
+-- Faturamento por cliente
+WITH pedidos_pagos AS MATERIALIZED (
+    SELECT *
+    FROM orders
+    WHERE status = 'Pago'
+)
+SELECT 
+	c.nome, 
+	SUM(p.valor_total) AS total_gasto
+FROM customers c
+JOIN pedidos_pagos p ON c.customer_id = p.customer_id
+GROUP BY c.nome;
 	
