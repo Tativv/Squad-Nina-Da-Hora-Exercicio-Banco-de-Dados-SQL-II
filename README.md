@@ -58,3 +58,13 @@ O banco de dados foi usado para praticar consultas SQL avançadas:
 
 ## 👥 Equipe
 **Squad Nina Da Hora**  
+## Integrantes
+1. Bruna  de Avila Pospiesz
+2. Tatiana Varona Villavicencio
+3. Vanessa Simão da Costa
+4. Pâmella Oliveira
+5. Francielle Cristina da C. Silva
+6. Ingrid Costa Ferreira
+7. Luana Jaime Tocchio
+8. Vanelle Rabelo do Nascimento
+9. Gisela Keidel
