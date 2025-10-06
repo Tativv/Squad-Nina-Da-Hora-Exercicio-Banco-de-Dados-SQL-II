@@ -1,4 +1,4 @@
-
+	
 --1.1 Liste o valor médio gasto por cliente
 WITH total_por_cliente AS (
     SELECT
@@ -106,7 +106,7 @@ FROM
 WHERE
     o.dt_pedido >= DATE('now', '-30 day');
 
-- 4.1 Liste todos os produtos e indique se foram ou não vendidos (LEFT JOIN)
+-- 4.1 Liste todos os produtos e indique se foram ou não vendidos (LEFT JOIN)
 SELECT
     p.product_id AS ID_Produto,
     p.nome AS Nome_Produto,
