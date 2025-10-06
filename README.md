@@ -52,9 +52,12 @@ O banco de dados foi usado para praticar consultas SQL avançadas:
 3. Mostrar NULL como "Sem valor informado".
 
 ## 🚀 Como usar
-1. Baixe o arquivo `DB_Desafio_Loja.db`.  
-2. Abra no [DBeaver](https://dbeaver.io/) ou outro cliente SQLite.  
-3. Execute as consultas SQL para praticar e testar o banco.
+1. Baixe o arquivo `DB_Universidade.db`.  
+   - Ele contém todas as tabelas do banco de dados, incluindo as respostas dos exercícios.  
+   - Você pode abrir no [DBeaver](https://dbeaver.io/) ou outro cliente SQLite para visualizar as tabelas e dados.  
+2. Baixe o arquivo `respostas.sql`.  
+   - Ele contém todas as respostas dos exercícios unificadas em um único script.  
+   - Ideal para quem quer ver rapidamente todas as respostas sem precisar executar as queries individualmente.
 
 ## 👥 Equipe
 **Squad Nina Da Hora**  
@@ -67,4 +70,5 @@ O banco de dados foi usado para praticar consultas SQL avançadas:
 6. Ingrid Costa Ferreira
 7. Luana Jaime Tocchio
 8. Vanelle Rabelo do Nascimento
-9. Gisela Keidel
+9. Gisela Keidel  
+
