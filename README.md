@@ -1,74 +1,82 @@
-# Squad Nina Da Hora - Exercício Banco de Dados SQL II
- Bootcamp Business Intelligence - Instituto Localiza
-Este repositório contém o banco de dados utilizado no **Exercício Banco de Dados SQL II** do **Bootcamp Business Intelligence - Instituto Localiza**, pelo squad **Nina Da Hora**.
+# 📊 Análise de Dados com SQL Avançado - Base de Vendas
 
-## 📂 Arquivo
-- `DB_Desafio_Loja.db` → Base de dados SQLite contendo todas as tabelas e dados de exemplo.
+Projeto desenvolvido no Bootcamp de Business Intelligence (Instituto Localiza) com foco em análise de dados e consultas SQL avançadas.
 
-## 🗄️ Estrutura das Tabelas
-- **COSTUMERS** → Armazena os dados dos clientes (ID, nome, email, data de cadastro). 
-- **ORDERS** → Contém a lista de produtos (ID, nome, preço, categoria).
-- **PRODUCTS** → Informações sobre pedidos (ID, cliente, data, valor total, status).
-- **ORDER_ITEMS** → Tabela de ligação que detalha os itens de cada pedido (ID do item, pedido, produto, quantidade, preço unitário).   
+---
 
-## 📝 Exercícios
-O banco de dados foi usado para praticar consultas SQL avançadas:
-### 1. CTE (Common Table Expressions)
-1. Valor médio gasto por cliente usando CTE. 
-2. CTE recursiva para gerar sequência de datas e LEFT JOIN com pedidos.
+## 📌 Visão geral
 
-### 2. Window Functions
-1. Valor do pedido e rank dos pedidos por cliente.  
-2. Média móvel de 3 pedidos para cada cliente. 
-3. Valor do primeiro e último pedido de cada cliente usando FIRST_VALUE e LAST_VALUE.
+Este projeto utiliza uma base de dados de vendas para explorar informações sobre clientes, pedidos e produtos, aplicando técnicas avançadas de SQL para geração de insights.
 
-### 3. Estruturas de apoio
-1. View de faturamento diário consolidado.
-2. Tabela temporária com clientes que compraram nos últimos 30 dias. 
+---
 
-### 4. Joins Avançados
-1. Liste todos os produtos e indique se foram vendidos (LEFT JOIN).
-2. Clientes que compraram todos os produtos de uma categoria (NOT EXISTS).
-3. Clientes que compraram um produto, mas nunca outro (ex.: Eletrônicos vs Roupas).
+## 🛠️ Tecnologias
 
-### 5. Manipulação de Strings e Conversão
-1. Mostrar apenas domínio do e-mail dos clientes.
-2. Converter nomes dos clientes para MAIÚSCULAS.
-3. Criar coluna calculada concatenando nome do cliente e ID do pedido.
+![SQL](https://img.shields.io/badge/SQL-00C853?style=for-the-badge&logo=postgresql&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white)
 
-### 6. Manipulação de Datas
-1. Mostrar apenas o ano da data de cadastro.
-2. Calcular dias desde o pedido.
-3. Adicionar 7 dias à data do pedido.
+---
 
-### 7. Performance e Otimização
-1. Criar índice em orders (customer_id, dt_pedido) e explicar uso.
-2. Comparar query com JOIN vs EXISTS.
-3. Identificar consultas que podem usar CTE materializada.
+## 📂 Base de dados
 
-### 8. Manipulação de Strings e Conversão
-1. Classificar pedidos com CASE WHEN: "Baixo", "Médio", "Alto".
-2. Coluna calculada: cliente Ativo ou Inativo.
-3. Mostrar NULL como "Sem valor informado".
+O banco contém as seguintes entidades:
 
-## 🚀 Como usar
-1. Baixe o arquivo `DB_Universidade.db`.  
-   - Ele contém todas as tabelas do banco de dados, incluindo as respostas dos exercícios.  
-   - Você pode abrir no [DBeaver](https://dbeaver.io/) ou outro cliente SQLite para visualizar as tabelas e dados.  
-2. Baixe o arquivo `respostas.sql`.  
-   - Ele contém todas as respostas dos exercícios unificadas em um único script.  
-   - Ideal para quem quer ver rapidamente todas as respostas sem precisar executar as queries individualmente.
+- **CUSTOMERS**: dados dos clientes  
+- **ORDERS**: informações de pedidos  
+- **PRODUCTS**: catálogo de produtos  
+- **ORDER_ITEMS**: detalhes dos pedidos  
+
+---
+
+## 📊 Técnicas aplicadas
+
+- CTE (Common Table Expressions)  
+- Window Functions (RANK, FIRST_VALUE, LAST_VALUE)  
+- JOINs avançados  
+- Agregações e agrupamentos  
+- Manipulação de strings e datas  
+- Criação de views e tabelas temporárias  
+- Otimização e análise de performance  
+
+---
+
+## 🔍 Análises realizadas
+
+- Ranking de pedidos por cliente  
+- Média móvel de compras  
+- Identificação de comportamento de clientes  
+- Análise de faturamento diário  
+- Classificação de pedidos por valor  
+- Identificação de padrões de compra  
+
+---
+
+## ▶️ Como executar
+
+1. Baixe o arquivo `DB_Desafio_Loja.db`  
+2. Abra em um cliente SQLite (DBeaver, SQLiteStudio, etc.)  
+3. Execute o script `respostas.sql`  
+
+---
+
+## 👩‍💻 Minha contribuição
+
+- Desenvolvimento de consultas SQL avançadas  
+- Análise de dados de vendas  
+- Aplicação de técnicas de otimização  
+
+---
 
 ## 👥 Equipe
-**Squad Nina Da Hora**  
-## Integrantes
-1. Bruna  de Avila Pospiesz
-2. Tatiana Varona Villavicencio
-3. Vanessa Simão da Costa
-4. Pâmella Oliveira
-5. Francielle Cristina da C. Silva
-6. Ingrid Costa Ferreira
-7. Luana Jaime Tocchio
-8. Vanelle Rabelo do Nascimento
-9. Gisela Keidel  
 
+Squad Nina Da Hora
+
+- Bruna de Avila Pospiesz  
+- Tatiana Varona Villavicencio  
+- Vanessa Simão da Costa  
+- Pâmella Oliveira  
+- Francielle Cristina da C. Silva  
+- Ingrid Costa Ferreira  
+- Luana Jaime Tocchio  
+- Vanelle Rabelo do Nascimento  
+- Gisela Keidel  
